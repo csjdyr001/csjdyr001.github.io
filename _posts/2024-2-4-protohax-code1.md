@@ -65,6 +65,10 @@ import org.cloudburstmc.protocol.bedrock.packet.*
 
 [org.cloudburstmc.protocol:bedrock-connection:3.0.0.Beta1-SNAPSHOT](https://repo.opencollab.dev/#/maven-snapshots/org/cloudburstmc/protocol/bedrock-connection/3.0.0.Beta1-SNAPSHOT)
 
+[org.cloudburstmc.protocol:common:3.0.0.Beta1-SNAPSHOT](https://repo.opencollab.dev/#/maven-snapshots/org/cloudburstmc/protocol/common/3.0.0.Beta1-SNAPSHOT)
+
+[org.cloudburstmc.protocol:bedrock-codec:3.0.0.Beta1-SNAPSHOT](https://repo.opencollab.dev/#/maven-snapshots/org/cloudburstmc/protocol/bedrock-codec/3.0.0.Beta1-SNAPSHOT)
+
 [natives](https://github.com/CloudburstMC/Natives)
 
 [gson-2.10.1.jar](https://repo1.maven.org/maven2/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar)
