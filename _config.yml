@@ -38,11 +38,11 @@ nightMode: true
 # Comments 评论功能
 comments:
   gitalk: true
-  gitalk_clientID: 'c5c22ef91d4a558cf890'
-  gitalk_Secret: 'a9f0cc5eb3df478e48e2404114ae4d9b1877c30d'
-  gitalk_repo: 'csjdyr001.github.io'
-  gitalk_owner: 'csjdyr001'
-  gitalk_admin: 'csjdyr001'
+  clientID: 'c5c22ef91d4a558cf890'
+  secret: 'a9f0cc5eb3df478e48e2404114ae4d9b1877c30d'
+  repo: 'csjdyr001.github.io'
+  owner: 'csjdyr001'
+  admin: 'csjdyr001'
   distractionFreeMode: true
 
 # MathJax 公式支持 by Ray-Eldath
