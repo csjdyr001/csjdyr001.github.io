@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
 {% include post-head.html %}
 
 <body>
@@ -46,6 +48,15 @@
       <div class="social-share"></div>
     </div>
     {% endif %}
+  </div>
+
+  <div>
+     {% if site.comments.gitalk %}
+     <section class="post-footer-item comment">
+     <div id="gitalk_container"></div>
+     <div id="disqus_thread"></div>
+     </section>
+     {% endif %}
   </div>
 
   <section class="author-detail">
@@ -142,6 +153,22 @@
   </script>
   {% endif %}
 
+  {% if site.comments.gitalk %}
+  <script>
+    var gitalk = new Gitalk({
+      id: '{{page.date}}',
+      clientID: '{{ site.comments.clientID }}',  //这里其实可以直接填值，但是考虑到页面安全性，还是通过配置的方式添加
+      clientSecret: '{{ site.comments.secret }}', 
+      repo: '{{ site.comments.repo }}', 
+      owner: '{{ site.comments.owner }}',
+      admin: '{{ site.comments.admin }}',
+      distractionFreeMode: '{{ site.comments.distractionFreeMode }}'
+    })
+
+    gitalk.render('disqus_thread')
+  </script>
+  {% endif %}
+  
   <script src="{{ "/assets/js/prism.js" | relative_url }}"></script>
   <script src="{{ "/assets/js/index.min.js" | relative_url }}"></script>
 </body>
