@@ -161,8 +161,9 @@
       clientSecret: '{{ site.comments.secret }}', 
       repo: '{{ site.comments.repo }}', 
       owner: '{{ site.comments.owner }}',
-      admin: '{{ site.comments.admin }}',
-      distractionFreeMode: '{{ site.comments.distractionFreeMode }}'
+      admin: ['{{ site.comments.admin }}'],
+      distractionFreeMode: '{{ site.comments.distractionFreeMode }}',
+      proxy: 'https://proxy-gitalk-api.netlify.app/github_access_token' //代理
     })
 
     gitalk.render('disqus_thread')
