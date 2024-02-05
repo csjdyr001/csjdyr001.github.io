@@ -43,7 +43,7 @@ comments:
   repo: 'csjdyr001.github.io'
   owner: 'csjdyr001'
   admin: 'csjdyr001'
-  distractionFreeMode: true
+  distractionFreeMode: false
 
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true
