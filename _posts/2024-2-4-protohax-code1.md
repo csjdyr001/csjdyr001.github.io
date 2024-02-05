@@ -32,7 +32,7 @@ dependencies {
 这些代码都是引入一些依赖库之类的，下载链接在文末。
 
 再进入src/main/java/dev/sora/relay/game/路径，查看[GameSession.kt](https://github.com/hax0r31337/ProtoHax/blob/stable/src/main/java/dev/sora/relay/game/GameSession.kt)文件，发现继承自MinecraftRelayPacketListener类，而MinecraftRelayListener类是MinecraftRelay类的一个接口，我们先放到一旁。继续看GameSession类，可以看出这个类是用来修改、发送数据包的，在152到162行中，有一个名为chat的函数如下：
-```
+```kotlin
 fun chat(msg: String) {
 		logInfo("chat >> $msg")
 		if (!netSessionInitialized) return
@@ -46,11 +46,11 @@ fun chat(msg: String) {
 	}
 ```
 通过代码可以大致看出这是一个在minecraft中发送一个RAW消息（也就是在物品栏上方的信息，相当于minecraft中的/titleraw指令）的功能，而COLORED_NAME函数的内容则是protohax的标识：
-```
+```kotlin
 const val COLORED_NAME = "§9§lProtoHax§r"
 ```
 而这个函数中的TextPacket又是什么类呢？根据sendPacketToClient接收一个BedrockPacket类，这说明了TextPacket继承自BedrockPacket类，但是在GameSession.kt整个代码中都没发现明确指定TextPacket类的语句，在同级目录下也没有这样的类，这时，我发现了这一行import语句：
-```
+```kotlin
 import org.cloudburstmc.protocol.bedrock.packet.*
 ```
 我们可以猜测TextPacket这个类来自org.cloudburstmc.protocol.bedrock.packet包，顺着这个思路去寻找，在刚才的build.gradle中有导入一个名为org.cloudburstmc.protocol:bedrock-connection:3.0.0.Beta1-SNAPSHOT的包，排除了com.nukkitx包并使用[natives](https://github.com/CloudburstMC/Natives)包做为com.nukkitx的代替。而bedrock-connection/3.0.0.Beta1-SNAPSHOT这个包可以在[这里](https://repo.opencollab.dev/#/maven-snapshots/org/cloudburstmc/protocol/bedrock-connection/3.0.0.Beta1-SNAPSHOT)下载。
