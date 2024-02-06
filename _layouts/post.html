@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
 <script src="{{site.baseurl}}/assets/js/md5.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/pass.js"></script>
 {% include post-head.html %}
 
 <body>
@@ -159,8 +160,8 @@
   <script>
     var gitalk = new Gitalk({
       id: md5(location.pathname),
-      clientID: '{{ site.comments.clientID }}',  //这里其实可以直接填值，但是考虑到页面安全性，还是通过配置的方式添加
-      clientSecret: '{{ site.comments.secret }}', 
+      clientID: getClientID(),  //这里其实可以直接填值，但是考虑到页面安全性，还是通过配置的方式添加
+      clientSecret: getSecret(), 
       repo: '{{ site.comments.repo }}', 
       owner: '{{ site.comments.owner }}',
       admin: ['{{ site.comments.admin }}'],
