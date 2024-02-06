@@ -38,8 +38,6 @@ nightMode: true
 # Comments 评论功能
 comments:
   gitalk: true
-  clientID: 'c5c22ef91d4a558cf890'
-  secret: 'a9f0cc5eb3df478e48e2404114ae4d9b1877c30d'
   repo: 'csjdyr001.github.io'
   owner: 'csjdyr001'
   admin: 'csjdyr001'
