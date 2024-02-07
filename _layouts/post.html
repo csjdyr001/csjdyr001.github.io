@@ -158,7 +158,6 @@
 
   {% if site.comments.gitalk %}
   <script>
-    try{
     var gitalk = new Gitalk({
       id: md5(location.pathname),
       clientID: getClientID(),  //这里其实可以直接填值，但是考虑到页面安全性，还是通过配置的方式添加
@@ -169,9 +168,6 @@
       distractionFreeMode: '{{ site.comments.distractionFreeMode }}',
       proxy: 'https://proxy-gitalk-api.netlify.app/github_access_token' //代理
     })
-    }catch(e){
-      alert(e.message);
-    }
 
     gitalk.render('disqus_thread')
   </script>
