@@ -170,7 +170,7 @@
       proxy: 'https://proxy-gitalk-api.netlify.app/github_access_token' //代理
     })
     }catch(e){
-      alert(err.message);
+      alert(e.message);
     }
 
     gitalk.render('disqus_thread')
