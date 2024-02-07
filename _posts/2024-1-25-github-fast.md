@@ -24,4 +24,4 @@ tags: Github
 
 
 ******
-下载安装[Hosts Go](https://drive.paimon.cloud/s/02kUB)并打开，把“HOSTS保护”和“DNS保护”选项都打开，点击“HOSTS设置”按钮，在新进入的页面点击右上角的三个点，选择导入HOSTS文件，点击文件选择框坐上角的“←”按钮返回上一级目录，选择你前面存放的hosts2.txt文件，选择后可以看到页面上多出了一堆项目，返回主界面，点击圆形的“启动”按钮，授权，打开[Github](https://www.github.com/)，可正常访问。
+下载安装[Hosts Go（密码0000）](https://wwp.lanzoup.com/i1MMQ1nnsx7g)并打开，把“HOSTS保护”和“DNS保护”选项都打开，点击“HOSTS设置”按钮，在新进入的页面点击右上角的三个点，选择导入HOSTS文件，点击文件选择框坐上角的“←”按钮返回上一级目录，选择你前面存放的hosts2.txt文件，选择后可以看到页面上多出了一堆项目，返回主界面，点击圆形的“启动”按钮，授权，打开[Github](https://www.github.com/)，可正常访问。
