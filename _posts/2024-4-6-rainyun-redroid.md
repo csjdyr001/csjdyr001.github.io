@@ -12,12 +12,14 @@ tags: redroid
 - [一、准备](#一、准备)
 - [二、部署云手机](#二、部署云手机)
 ## 〇、前言
+<span id="〇、前言"></span>
 云手机可以通过docker-android或redroid搭建，docker-android请见[lraven的这篇文章](https://blog.lraven.tech/archives/149/)，但是我实测后发现有bug，一直BOOTING，日志显示
 ```
 2024-04-02 15:02:59.408 INFO gave up: log_web_shared entered FATAL state. too many start retries too quickly
 ```
 所以这篇文章讲redroid搭建云手机
 ## 一、准备
+<span id="一、准备"></span>
 首先注册一个[雨云账号](https://app.rainyun.com/auth/reg)，注册账号后绑定微信，即可获得新人折扣
 
 登录后点击“云服务器”，进去后点“+购买云服务器”，区域配置自己选，我选的【香港2区云服务器】【G6
@@ -25,6 +27,7 @@ tags: redroid
 
 公网IP建议选“NAT共享IP模式”，更便宜，然后点立即购买
 ## 二、部署云手机
+<span id="二、部署云手机"></span>
 接下来打开[https://app.rainyun.com/apps/rcs/list](https://app.rainyun.com/apps/rcs/list)进入“我的云服务器”界面，如果你的服务器旁边显示的状态为“创建中”，请先稍作等待，然后点击“管理”，在新打开的页面下滑找到“服务器信息”的“远程连接”一栏，然后复制远程密码备用
 
 接下来点击“远程连接(VNC)”再点“Xtermjs 模式”，进入VNC控制台，首次进入VNC需要输入用户名（就是root）和你的远程密码，然后安装docker，输入
