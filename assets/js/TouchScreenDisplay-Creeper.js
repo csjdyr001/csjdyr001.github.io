@@ -22,6 +22,7 @@ window.onload = function() {
 			creeper.style.position = "absolute";
 			creeper.style.top = y + "px";
 			creeper.style.left = x + "px";
+			creeper.style.pointerEvents = "none";
 			document.body.appendChild(creeper);
 			boom();
 		}
@@ -63,6 +64,7 @@ function boom() {
                         canvas.style.position = "absolute";
 						canvas.style.top = creeper.style.top;
 						canvas.style.left = creeper.style.left;
+						canvas.style.pointerEvents = "none";
 						document.body.appendChild(canvas);
 						createParticles(20, 20);
 						setTimeout(function() {
