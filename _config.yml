@@ -1,7 +1,7 @@
 # _config.yml
 # Site settings 配置站点
 title: "caofangkuai's blog"
-description: 'caofangkuai-studio repo:https://csjdyr001.github.io/repo/'
+description: 'www.caofangkuai.top'
 keyword: 'caofangkuai'
 url: 'http://blog.caofangkuai.top' # your host
 
@@ -61,7 +61,7 @@ postPatterns: 'circuitBoard'
 # url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
   github: '//github.com/csjdyr001'
-  email: 'mailto:caofangkuai2022@gmail.com'
+  email: 'mailto:caofangkuai2022@qq.com'
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar
