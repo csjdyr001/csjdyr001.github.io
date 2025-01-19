@@ -16,7 +16,7 @@ tags: Android Shizuku 黑阈
 手机开发者选项中打开【usb调试】和【仅充电允许adb调试】，然后给黑阈激活器插上电，用数据线连接你的手机，选择【仅充电】模式，这时会弹出一个【是否允许该设备调试您的手机】的对话框，点配对，然后打开黑阈即可自动激活
 黑阈激活后点击侧边栏的【执行指令】输入
 ```bash
-sh /storage//start.sh0/android/data/moe.shizuku.privileged.api/start.sh
+sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh
 ```
 然后shizuku就正常激活了。
 补充：激活器激活黑阈后也会分配一个无线端口出来。
